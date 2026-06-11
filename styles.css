@@ -185,3 +185,32 @@ body {
 #botonEnviarClasico:active {
     background: #A6A695;
 }
+
+/* --- ADAPTACIÓN AUTOMÁTICA PARA CELULARES --- */
+@media (max-width: 768px) {
+    /* Pone las columnas una debajo de la otra en vertical */
+    .chat-container {
+        flex-direction: column !important;
+        height: calc(100vh - 120px) !important;
+        gap: 8px;
+    }
+
+    /* Le da todo el ancho al cuadro de mensajes para leer cómodo */
+    .chat-main {
+        width: 100% !important;
+        height: 65% !important;
+    }
+
+    /* Pasa la lista de usuarios abajo para que no moleste a los lados */
+    .users-list {
+        width: 100% !important;
+        height: 35% !important;
+        border-left: none !important;
+        border-top: 2px solid #ccc !important;
+    }
+
+    /* Agranda la caja de texto para que sea fácil tocarla con el dedo */
+    .chat-input-area input {
+        font-size: 16px !important;
+    }
+}
