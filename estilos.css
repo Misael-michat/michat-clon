@@ -1,0 +1,4 @@
+body { background-color: #8e8e8e; font-family: sans-serif; display: flex; justify-content: center; height: 100vh; margin: 0; }
+#chat-container { width: 800px; height: 600px; background: white; display: flex; flex-direction: column; border: 2px solid #555; }
+#mensajes { flex: 1; border-bottom: 2px solid #ccc; padding: 10px; overflow-y: auto; }
+#mensaje-input { padding: 10px; border: 1px solid #ccc; }
